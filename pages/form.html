@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud de mantenimiento correctivo</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/form-style.css" />
+  </head>
+  <body>
+    <form
+      class="frame__container--form"
+      method="post"
+      action="registrarTicket.php"
+    >
+      <h3>Trouble Tickets. Solicitud de mantenimiento correctivo</h3>
+      <h5>
+        Llenar los campos del formulario. Los campos marcados con * son
+        necesarios.
+      </h5>
+      <input class="input" type="text" name="email" placeholder="correo*" />
+      <input class="input" type="text" name="titulo" placeholder="título*" />
+      <select name="solicitud" id="solicitud">
+        <option value="selecciona">Seleccionar tipo de solicitud*</option>
+        <option value="Internet">Internet</option>
+        <option value="Correo">Correo</option>
+        <option value="Monitor">Monitor</option>
+        <option value="Google drive">Google drive</option>
+        <option value="Listas de distribución (Grupos)">
+          Listas de distribución (Grupos)
+        </option>
+        <option value="Laptop">Laptop</option>
+        <option value="Celular">Celular</option>
+        <option value="Logitude">Logitude</option>
+        <option value="Instalación de programa">Instalación de programa</option>
+        <option value="Impresora">Impresora</option>
+        <option value="Microsoft Office">Microsoft Office</option>
+        <option value="Skype">Skype</option>
+        <option value="Contpaq">Contpaq</option>
+        <option value="Antivirus">Antivirus</option>
+      </select>
+      <select name="oficina" id="ofi">
+        <option value="selecciona">Seleccionar oficina*</option>
+        <option value="Monterrey">Monterrey</option>
+        <option value="Puebla">Puebla</option>
+        <option value="CDMX">CDMX</option>
+        <option value="Querétaro">Querétaro</option>
+        <option value="San Luis">San Luis</option>
+        <option value="León">León</option>
+        <option value="Guadalajara">Guadalajara</option>
+        <option value="Torreón">Torreón</option>
+        <option value="Alemania">Alemania</option>
+        <option value="China">China</option>
+      </select>
+      <textarea
+        class="descripcion"
+        type="text"
+        name="descripcion"
+        placeholder="  Ingresar una descripción del problema*"
+      ></textarea>
+      <select name="departamento" id="depto">
+        <option value="selecciona">Seleccionar departamento*</option>
+        <option value="Administration">Administration</option>
+        <option value="Finance">Finance</option>
+        <option value="Operations">Operations</option>
+        <option value="Business Implementations">
+          Business Implementations
+        </option>
+        <option value="Sales">Sales</option>
+        <option value="Sales Support">Sales Support</option>
+        <option value="People Operations">People Operations</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Pricing">Pricing</option>
+        <option value="Global Business Development">
+          Global Business Development
+        </option>
+        <option value="Business Development">Business Development</option>
+      </select>
+      <input
+        class="input"
+        type="text"
+        name="evidencia"
+        placeholder="añadir evidencia (opcional)"
+      />
+      <input
+        class="levantartTicket"
+        type="submit"
+        name="registrar"
+        value="Enviar ticket"
+      />
+    </form>
+    <form
+      class="frame__container--form2"
+      method="post"
+      action="form_usuarios.php"
+    >
+      <input
+        style="width: auto"
+        class="levantartTicket"
+        type="submit"
+        name="consulta"
+        value="Consultar todos los tickets"
+      />
+      <input
+        class="levantartTicket"
+        type="submit"
+        name="usuario"
+        value="Registrar un usuario"
+      />
+    </form>
+  </body>
+</html>

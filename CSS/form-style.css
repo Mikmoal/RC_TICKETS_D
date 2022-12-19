@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    align-items: center;
+    color: #555;
+    background: #ecf0f3;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.frame__container--form2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.frame__container--form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.seccion2columnas {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.frame__container--form input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 15px 10px 15px 5px;
+    
+}
+.frame__container--form2 input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 15px 10px 15px 5px;
+    width: auto;
+}
+
+input {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    /* Box-shadow for 3d */
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+}
+textarea.descripcion {
+    overflow: hidden;
+    resize: none;
+    height: 5em;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #ecf0f3;
+    /* Box-shadow for 3d */
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+}
+
+.levantartTicket {
+    /* To hide default browser optios of input field */
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 60px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #6799d1;
+    box-shadow: 7px 7px 8px #cbced1,
+        -7px -7px 8px #ffffff;
+    transition: 0.5s;
+}
+
+.levantartTicket:hover {
+    background: #5f83b8;
+}
+
+.levantartTicket:active {
+    background: #4a6e97;
+}
+
+select {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    /* Box-shadow for 3d */
+    box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff;
+}
+
+.frame__container--form select {
+    /* To hide default browser optios of input field */
+    border: none;
+    outline: none;
+    /* Custom design for the input field */
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 15px 10px 15px 5px;
+}
