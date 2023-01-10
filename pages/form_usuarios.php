@@ -76,6 +76,7 @@
           <nav>
             <h3>Usuarios</h3>
           </nav>
+          <div>
           <form
           class="frame__container--form"
           method="post"
@@ -83,7 +84,6 @@
           style="align-items: center"
 
           >
-            <p></p>
             <h3>Llenar los datos del nuevo usuario</h3>
             <h4>Todos los campos son necesarios*</h4>
             <input class="input" type="text" name="nombre" placeholder="Nombre*" />
@@ -114,6 +114,8 @@
               value="Consultar todos los usuarios"
             />
           </form>
+          </div>
+          
           <form style= 'display: flex; flex-direction: column; width: 25%;' method='post' action='form.html'><input class='levantartTicket' type='submit' name='regresar' value='Regresar'/></form>
         EOT;
       }

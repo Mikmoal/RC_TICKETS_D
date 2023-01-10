@@ -15,6 +15,12 @@ body {
     justify-content: space-around;
 }
 
+div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
 nav {
     width: 100%;
     background-color: #555;
