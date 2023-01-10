@@ -73,12 +73,17 @@
       } else {
         echo <<<EOT
           <link rel="stylesheet" type="text/css" href="../CSS/form-style.css" />
+          <nav>
+            <h3>Usuarios</h3>
+          </nav>
           <form
           class="frame__container--form"
           method="post"
           action="registrarTicket.php"
           style="align-items: center"
+
           >
+            <p></p>
             <h3>Llenar los datos del nuevo usuario</h3>
             <h4>Todos los campos son necesarios*</h4>
             <input class="input" type="text" name="nombre" placeholder="Nombre*" />
