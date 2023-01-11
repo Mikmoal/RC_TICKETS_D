@@ -17,7 +17,7 @@
           echo "<form style= 'display: flex; flex-direction: column; width: 25%;' method='post' action='form.html'><h2>Ocurrió un problema</h2><img style='width: 50px;height: 50px;' src='../assets/nocheck.png' alt='nocheck' /><p>No se pudo registrar el ticket, asegurese de llenar todos los campos</p><input style='outline: none;border: none;cursor: pointer;width: 50%;height: 60px;border-radius: 25px;font-size: 20px;font-weight: 700;font-family: 'Lato', sans-serif;color: #fff;text-align: center;background: #6799d1;box-shadow: 7px 7px 8px #cbced1,-7px -7px 8px #ffffff;transition: 0.5s;' type='submit' name='regresar' value='Regresar'/></form>";
         } else {
           $idIncremental = 1;
-          $marca_temporal = date('d/m/y h:i:s');
+          $marca_temporal = date("Y-m-d H:i:s");
           $status = "PENDIENTE";
           $consultaId = "SELECT MAX(ticket_id) FROM tickets_table";
           try{
