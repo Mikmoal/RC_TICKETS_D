@@ -41,7 +41,7 @@ nav {
     display: flex;
     flex-direction: column;
     width: 50%;
-
+    padding-top: 4em;
 }
 
 .seccion2columnas {
@@ -82,7 +82,8 @@ textarea.descripcion {
     resize: none;
     height: 5em;
     font-family: "Lato", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 18px;
     color: #555;
     text-align: justify;
     margin-bottom: 20px;
@@ -93,6 +94,8 @@ textarea.descripcion {
     /* Box-shadow for 3d */
     box-shadow: inset 5px 5px 5px #cbced1,
         inset -5px -5px 5px #ffffff;
+    padding-top: 22px;
+    padding-left: 6px;
 }
 
 .levantartTicket {

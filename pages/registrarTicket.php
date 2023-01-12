@@ -79,11 +79,14 @@
           echo ($consultaEjecutar);		
           try{
             $resultado = $objetoPDO->query($consultaEjecutar);
-            echo "<div><h2>Registro exitoso</h2><p>El usuario se ha registrado correctamente</p><img src='../assets/check.png' alt='check' /></div>";
+
+            echo "<form style= 'display: flex; flex-direction: column; width: 25%;' method='post' action='form_usuarios.php'><h2>Registro exitoso</h2><img style='width: 50px;height: 50px;' src='../assets/check.png' alt='check' /><p>El usuario se ha registrado correctamente</p><input style='outline: none;border: none;cursor: pointer;width: 50%;height: 60px;border-radius: 25px;font-size: 20px;font-weight: 700;font-family: 'Lato', sans-serif;color: #fff;text-align: center;background: #6799d1;box-shadow: 7px 7px 8px #cbced1,-7px -7px 8px #ffffff;transition: 0.5s;' type='submit' name='regresar' value='Regresar'/></form>";
+
           } catch(PDOException $e) {
             echo 'Falló la conexión: ' . $e->getMessage();
             echo "<br/>";
-            echo "<div><h2>Ocurrió un problema</h2><p>No se pudo registrar el usuario</p><img src='../assets/nocheck.png' alt='nocheck' /></div>";
+
+            echo "<form style= 'display: flex; flex-direction: column; width: 25%;' method='post' action='form_usuarios.php'><h2>Ocurrió un problema</h2><img style='width: 50px;height: 50px;' src='../assets/nocheck.png' alt='nocheck' /><p>No se pudo registrar el usuario, asegurese de llenar todos los campos</p><input style='outline: none;border: none;cursor: pointer;width: 50%;height: 60px;border-radius: 25px;font-size: 20px;font-weight: 700;font-family: 'Lato', sans-serif;color: #fff;text-align: center;background: #6799d1;box-shadow: 7px 7px 8px #cbced1,-7px -7px 8px #ffffff;transition: 0.5s;' type='submit' name='regresar' value='Regresar'/></form>";
           }
         }
       }
